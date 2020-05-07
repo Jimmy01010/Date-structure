@@ -6,8 +6,9 @@ typedef struct Node *PtrToNode;
 typedef PtrToNode List;
 typedef PtrToNode Position;
 typedef int ElementType;
-void Delete(ElementType X, List L)
 
+List InitLIst();
+void Delete(ElementType X, List L)
 List MakeEmpty(List L);
 int IsEmpty(List L);
 int IsLast(Position P, List L);
