@@ -1,11 +1,13 @@
 #include"list.h"
 #include <stdlib.h> 
 
+
 /* Return true if L is empty*/
 int IsEmpty(List L)
 {
     return L->Next == NULL;
 }
+
 
 /* Return true if P is the last position in list L */
 /* Parameter L is unused in this implemenration */
@@ -13,6 +15,7 @@ int IsLast(Position P, List L)
 {
     return P->Next == NULL;
 }
+
 
 /* Return Position of x in L; NULL is not found */
 Position Find(ElementType X, List L)
@@ -23,6 +26,7 @@ Position Find(ElementType X, List L)
         P = P->Next;
     return P;
 }
+
 
 /* If X is not found, then Next field of returned*/
 /* Position is NULL */
@@ -51,6 +55,7 @@ void Delete(ElementType X, List L)
     }
 }
 
+
 /* Insert (after legal position P) */
 /* Header implementation assumed */
 /* Parameter L is unused in this implementation*/
@@ -68,6 +73,7 @@ void Insert(Position P, ElementType X, List L)
     
 }
 
+
 /* Correct Deletelist algorithm */
 void Deletelist(List L)
 {
@@ -80,14 +86,6 @@ void Deletelist(List L)
         Temp = P->Next;
         free(P);
         P = Temp;
-    }
-
-            
-
-
+    }           
 }
-
-
-
-
 
