@@ -17,12 +17,13 @@ void Test_InitList()
 {
     List got;
     got = InitList();
+    
     if(got->Next == NULL)
         printf("Function InitLIst executed successfully!\n");
     else
         printf("Function InitLIst failed to execute!\n");
-    
 
+    Deletelist(got);
 }
 
 
