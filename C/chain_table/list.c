@@ -1,12 +1,13 @@
 #include"list.h"
 #include <stdlib.h> 
+#include <stdio.h>
 
 
 /* Return an initialized linked list*/
 List InitList()
 {
-    L = mallco(sizeof(struct Node));
-    L->next = NULL;
+    List L = (List)malloc(sizeof(struct Node));
+    L->Next = NULL;
     return L;
 }
 
@@ -77,8 +78,8 @@ void Insert(Position P, ElementType X, List L)
         printf("Out of space!");
     }
     TmeCell->Element = X;
-    TmeCell->next = P->next;
-    P->next = TmeCell;
+    TmeCell->Next = P->Next;
+    P->Next = TmeCell;
    
 }
 
@@ -96,7 +97,6 @@ void Deletelist(List L)
         Temp = P->Next;
         free(P);
         P = Temp;
-    }  
-    }           
+    }             
 }
 

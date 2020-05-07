@@ -7,8 +7,8 @@ typedef PtrToNode List;
 typedef PtrToNode Position;
 typedef int ElementType;
 
-List InitLIst();
-void Delete(ElementType X, List L)
+List InitList();
+void Delete(ElementType X, List L);
 void Delete(ElementType X, List L);
 List MakeEmpty(List L);
 int IsEmpty(List L);
