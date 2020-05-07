@@ -2,7 +2,6 @@
 #include <stdlib.h> 
 
 
-<<<<<<< HEAD
 /* Return an initialized linked list*/
 List InitList()
 {
@@ -12,8 +11,6 @@ List InitList()
 }
 
 
-=======
->>>>>>> c0ea750801b53039d1a0ece2b87cea7d36ed160b
 /* Return true if L is empty*/
 int IsEmpty(List L)
 {
@@ -86,11 +83,8 @@ void Insert(Position P, ElementType X, List L)
 }
 
 
-<<<<<<< HEAD
 /* Correct Deletelist algorithm */
-=======
 /* Deletelist the list */
->>>>>>> c0ea750801b53039d1a0ece2b87cea7d36ed160b
 void Deletelist(List L)
 {
     Position P, Temp;
@@ -102,10 +96,7 @@ void Deletelist(List L)
         Temp = P->Next;
         free(P);
         P = Temp;
-<<<<<<< HEAD
     }  
-=======
     }           
->>>>>>> c0ea750801b53039d1a0ece2b87cea7d36ed160b
 }
 
