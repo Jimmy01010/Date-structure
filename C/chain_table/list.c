@@ -74,7 +74,7 @@ void Insert(Position P, ElementType X, List L)
 }
 
 
-/* Correct Deletelist algorithm */
+/* Deletelist the list */
 void Deletelist(List L)
 {
     Position P, Temp;
