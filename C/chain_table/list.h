@@ -9,7 +9,8 @@ typedef int ElementType;
 
 List InitList();
 void Delete(ElementType X, List L);
-void Delete(ElementType X, List L);
+void Deletelist(List L);
+void Insert(Position P, ElementType X, List L);
 List MakeEmpty(List L);
 int IsEmpty(List L);
 int IsLast(Position P, List L);

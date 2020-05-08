@@ -38,9 +38,9 @@ Position Find(ElementType X, List L)
 }
 
 
-/* If X is not found, then Next field of returned*/
-/* Position is NULL */
+/* If X is not found, then Next field of returned Position is NULL */
 /* Assumes a header */
+/* Use with Delete */
 Position FindPrevious(ElementType X, List L)
 {
     Position P;
@@ -66,7 +66,7 @@ void Delete(ElementType X, List L)
 }
 
 
-/* Insert (after legal position P) */
+/* Insert (after position P) */
 /* Header implementation assumed */
 /* Parameter L is unused in this implementation*/
 void Insert(Position P, ElementType X, List L)
