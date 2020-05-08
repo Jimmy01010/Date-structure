@@ -6,12 +6,14 @@
 
 void Test_InitList();
 void Test_Insert();
+void Test_Find();
 
 
 int main()
 {
     Test_InitList();
     Test_Insert();
+    Test_Find();
     return 0;
 }
 
@@ -46,10 +48,17 @@ void Test_Insert()
 void Test_Find()
 {
     List got;
-    ElementType want 10;
+    Position P;
+    ElementType want = 10;
     got = InitList();
-    Inser(got, 10, got)
-
-
+    Insert(got, 10, got);
+    P = Find(want, got);
+    if(P->Element == 10)
+        printf("Find element successfully\n");
+    else
+        printf("Find element failed, got %d but want %d\n", got->Element, want);
+    Deletelist(got);
+    Deletelist(P);
 }
+
 
