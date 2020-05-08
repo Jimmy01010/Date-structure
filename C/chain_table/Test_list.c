@@ -24,7 +24,7 @@ void Test_InitList()
     got = InitList();
     
     if(got->Next == NULL)
-        printf("Function InitLIst executed successfully!\n");
+        printf("InitLIst executed successfully!\n");
     else
         printf("Function InitLIst failed to execute!\n");
 
